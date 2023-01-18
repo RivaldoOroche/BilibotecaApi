@@ -4,7 +4,7 @@ builder.Services.AddControllers();
 //builder.Services.AddSwaggerGen();
 var app = builder.Build();
 /*if (app.Environment.IsDevelopment())
-{
+{ddddddd
     app.UseSwagger();
     app.UseSwaggerUI();
 }*/
