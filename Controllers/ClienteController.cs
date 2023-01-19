@@ -29,7 +29,8 @@ namespace Biblioteca.Cliente.Api.Controllers
         public dominio.Entidades.Cliente BuscarCliente(int id)
         {
             #region
-            var client = new MongoClient("mongodb://localhost:27017");
+            var client = new MongoClient("mongodb://localhost:27017");   
+
             var database = client.GetDatabase("biblioteca");
             var colecction = database.GetCollection<dominio.Entidades.Cliente>("cliente");
             #endregion
