@@ -18,7 +18,7 @@ namespace Biblioteca.Cliente.Api.Controllers
         {
             #region
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("bilioteca");
+            var database = client.GetDatabase("biblioteca");
             var colecction = database.GetCollection<dominio.Entidades.Cliente>("cliente");
             #endregion
 
@@ -30,7 +30,7 @@ namespace Biblioteca.Cliente.Api.Controllers
         {
             #region
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("bilioteca");
+            var database = client.GetDatabase("biblioteca");
             var colecction = database.GetCollection<dominio.Entidades.Cliente>("cliente");
             #endregion
 
@@ -43,7 +43,7 @@ namespace Biblioteca.Cliente.Api.Controllers
         {
             #region
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("bilioteca");
+            var database = client.GetDatabase("biblioteca");
             var colecction = database.GetCollection<dominio.Entidades.Cliente>("cliente");
             #endregion
 
@@ -56,7 +56,7 @@ namespace Biblioteca.Cliente.Api.Controllers
         {
             #region
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("bilioteca");
+            var database = client.GetDatabase("biblioteca");
             var colecction = database.GetCollection<dominio.Entidades.Cliente>("cliente");
             #endregion
             colecction.FindOneAndReplace(x => x._id == cliente._id, cliente);
@@ -67,7 +67,7 @@ namespace Biblioteca.Cliente.Api.Controllers
         {
             #region
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("bilioteca");
+            var database = client.GetDatabase("biblioteca");
             var colecction = database.GetCollection<dominio.Entidades.Cliente>("cliente");
             #endregion
 
