@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -10,6 +10,12 @@
     <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca.Cliente.Aplicacion\Biblioteca.Cliente.Aplicacion.csproj" />
+    <ProjectReference Include="..\Biblioteca.Cliente.Dominio\Biblioteca.Cliente.Dominio.csproj" />
+    <ProjectReference Include="..\Biblioteca.Cliente.Infraestructura\Biblioteca.Cliente.Infraestructura.csproj" />
   </ItemGroup>
 
 </Project>
